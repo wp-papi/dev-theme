@@ -1,0 +1,97 @@
+@import url("normalize.css");
+
+/**
+ * Theme Name: Papi Dev theme
+ */
+
+body {
+	color: #383838;
+  font-family: "Source Sans Pro",Helvetica,Arial,sans-serif;
+  font-size: 1.25em;
+  word-wrap: break-word;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.15em;
+}
+
+.papi-debug {
+	background: #333;
+	padding: 10px 0 20px 0;
+}
+
+.papi-debug > div {
+	margin: 0 auto;
+	width: 500px;
+}
+
+.papi-debug p {
+	color: #eaeaea;
+	font-size: 1em;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.papi-debug h4 {
+	color: #fff;
+	font-weight: 300;
+	padding: 5px;
+	margin: 0;
+}
+
+.papi-debug-info {
+	background: #222;
+	border: 1px #000 solid;
+	color: #eaeaea;
+	font-size: 0.7em;
+	padding: 15px;
+	margin-top: 10px;
+}
+
+.papi-debug-info tr {
+	border-bottom: 1px #eaeaea solid;
+}
+
+.papi-debug-info th,
+.papi-debug-info td {
+	text-align: left;
+	padding: 5px 10px;
+}
+
+.papi-debug-info tr th:first-child,
+.papi-debug-info tr td:first-child {
+	border-right: 1px #eaeaea solid;
+	padding-left: 0;
+}
+
+.papi-debug-info a, .papi-debug-info a:visited {
+	color: #fff;
+	text-decoration: none;
+}
+
+.papi-debug-info a:hover {
+	text-decoration: underline;
+}
+
+.entry {
+	width: 500px;
+	margin: 0 auto;
+}
+
+.entry-hero, .entry-hero img {
+	width: 100%;
+	max-width: 500px;
+}
