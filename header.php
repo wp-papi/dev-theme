@@ -23,17 +23,19 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td>Page Type</td>
-								<td><?php the_papi_page_type_name(); ?></td>
+								<?php if ( function_exists( 'the_papi_page_type_name' ) ): ?>
+									<td>Page Type</td>
+									<td><?php the_papi_page_type_name(); ?></td>
+								<?php endif; ?>
 							</tr>
 							<tr>
 								<td>Template</td>
-								<td><?php global $template; echo basename($template); ?></td>
+								<td><?php global $template; echo basename( $template ); ?></td>
 							</tr>
 							<tr>
 								<td>Fields</td>
 								<td>
-									<?php print_r(papi_fields()); ?>
+									<?php print_r( papi_fields() ); ?>
 								</td>
 							</tr>
 							<tr>
