@@ -5,9 +5,7 @@ class Article_Page_Type extends Papi_Page_Type {
 	public function page_type() {
 		return [
 			'description' => 'Vel adipisicing dapibus nostra. Lectus malesuada volutpat aliquet',
-			'labels'      => [
-				'add_new_item' => 'Add New Article Page'
-			],
+			'fill_labels' => true,
 			'name'        => 'Article page',
 			'template'    => 'pages/article-page.php'
 		];
@@ -36,3 +34,45 @@ class Article_Page_Type extends Papi_Page_Type {
 	}
 
 }
+
+return [
+
+	/**
+	 * Page type meta.
+	 */
+
+	'page_type' => [
+		'name' => 'Article page'
+	],
+
+	/**
+	 * Remove meta boxes.
+	 */
+
+	'remove' => [
+		'editor'
+	],
+
+	/**
+	 * Register meta boxes.
+	 */
+
+	'register' => [
+
+		/**
+		 * Content meta box.
+		 */
+
+		'Content' => [
+			[
+				'title' => 'Hero image',
+				'type'  => 'image'
+			],
+			[
+				'title' => 'Editor',
+				'type'  => 'editor'
+			]
+		]
+	]
+
+];
