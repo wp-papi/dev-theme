@@ -25,7 +25,7 @@
 							<tr>
 								<?php if ( function_exists( 'the_papi_page_type_name' ) ): ?>
 									<td>Page Type</td>
-									<td><?php the_papi_page_type_name(); ?></td>
+									<td><?php echo empty( papi_page_type_name() ) ? 'No papi page type' : papi_page_type_name() ; ?></td>
 								<?php endif; ?>
 							</tr>
 							<tr>

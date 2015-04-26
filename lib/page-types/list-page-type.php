@@ -25,7 +25,7 @@ class List_Page_Type extends Papi_Page_Type {
 				'sidebar'  => false,
 				'settings' => array(
 					'items' => papi_property( array(
-          	'title'    => 'Page',
+						'title'    => 'Page',
 						'type'     => 'post',
 						'settings' => array(
 							'text'      => '',
