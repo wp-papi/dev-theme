@@ -18,7 +18,6 @@ class Article_Page_Type extends Papi_Page_Type {
 		) );
 
 		$this->box( 'Content', array(
-
 			papi_property( array(
 				'type'  => 'Image',
 				'title'	=> 'Hero image'
@@ -27,8 +26,17 @@ class Article_Page_Type extends Papi_Page_Type {
 			papi_property( array(
 				'type'  => 'editor',
 				'title' => 'Editor'
-			) )
+			) ),
 
+			papi_property( array(
+			  'title'    => 'Feature',
+			  'slug'     => 'feature_module',
+			  'type'     => 'post',
+			  'settings' => array(
+					'text' => 'Select module',
+					'post_type' => 'module'
+				)
+			) )
 		) );
 
 	}
