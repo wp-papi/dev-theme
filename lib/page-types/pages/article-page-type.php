@@ -36,7 +36,7 @@ class Article_Page_Type extends Papi_Page_Type {
 					'text' => 'Select module',
 					'post_type' => array( 'module', 'post' )
 				)
-			) ),
+			) )
 		) );
 
 	}
