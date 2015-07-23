@@ -7,7 +7,7 @@
 	<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
 	<?php
-		$hero = papi_field('hero_image');
+		$hero = papi_get_field('hero_image');
 		if ($hero):
 			?>
 			<div class="entry-hero">

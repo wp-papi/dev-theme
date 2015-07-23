@@ -13,36 +13,36 @@ class List_Page_Type extends Papi_Page_Type {
 
 	public function register() {
 
-		$this->remove( array(
-			'editor'
-		) );
+		$this->remove( ['editor'] );
 
-		$this->box( 'Content', array(
+		$this->box( 'Content', [
 
-			papi_property( array(
+			papi_property( [
 				'title'    => 'Pages',
 				'type'     => 'repeater',
 				'sidebar'  => false,
-				'settings' => array(
-					'items' => papi_property( array(
-						'title'    => 'Page',
-						'type'     => 'post',
-						'settings' => array(
-							'text'      => '',
-							'post_type' => 'page',
-							'query'     => array(
-								'meta_query' => array(
-									array(
-										'key' => '_papi_page_type',
-										'compare' => 'NOT EXISTS'
-									)
-								)
-							)
-						)
-					) )
-				)
-			) )
-		) );
+				'settings' => [
+					'items' => [
+						papi_property( [
+							'title'    => 'Page',
+							'type'     => 'post',
+							'settings' => [
+								'text'      => '',
+								'post_type' => 'page',
+								'query'     => [
+									'meta_query' => [
+										[
+											'key' => '_papi_page_type',
+											'compare' => 'NOT EXISTS'
+										]
+									]
+								]
+							]
+						] )
+					]
+				]
+			] )
+		] );
 
 	}
 

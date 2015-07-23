@@ -13,23 +13,21 @@ class Article_Page_Type extends Papi_Page_Type {
 
 	public function register() {
 
-		$this->remove( array(
-			'editor'
-		) );
+		$this->remove( ['editor'] );
 
-		$this->box( 'Content', array(
+		$this->box( 'Content', [
 
-			papi_property( array(
+			papi_property( [
 				'type'  => 'Image',
 				'title'	=> 'Hero image'
-			) ),
+			] ),
 
-			papi_property( array(
+			papi_property( [
 				'type'  => 'editor',
 				'title' => 'Editor'
-			) )
+			] )
 
-		) );
+		] );
 
 	}
 
