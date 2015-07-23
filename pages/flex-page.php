@@ -6,19 +6,16 @@
 <div class="entry">
 	<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
-	<?php
-		$hero = papi_get_field( 'hero_image' );
-		if ($hero):
-			?>
-			<div class="entry-hero">
-				<img src="<?php echo $hero->url; ?>" />
-			</div>
-			<?php
-		endif;
-	?>
-
 	<div class="entry-text">
-		<?php the_papi_field( 'editor' ); ?>
+		<h1>Flex lists</h1>
+		<ul>
+		<?php
+			$sections = papi_field( 'sections' );
+			echo '<pre>';
+			var_dump($sections);
+			echo '</pre>';
+		?>
+		</ul>
 	</div>
 </div>
 

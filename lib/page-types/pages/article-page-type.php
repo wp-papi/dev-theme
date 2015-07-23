@@ -23,10 +23,14 @@ class Article_Page_Type extends Papi_Page_Type {
 			] ),
 
 			papi_property( [
-				'type'  => 'editor',
-				'title' => 'Editor'
+			  'title'    => 'Feature',
+			  'slug'     => 'feature_module',
+			  'type'     => 'post',
+			  'settings' => [
+					'text' => 'Select module',
+					'post_type' => ['module', 'post']
+				]
 			] )
-
 		] );
 
 	}

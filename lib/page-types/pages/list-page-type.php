@@ -15,33 +15,35 @@ class List_Page_Type extends Papi_Page_Type {
 
 		$this->remove( ['editor'] );
 
-		$this->box( 'Content', [
+		$this->box( 'Collaborators', [
 
 			papi_property( [
-				'title'    => 'Pages',
 				'type'     => 'repeater',
+				'title'    => 'Collaborators',
+				'slug'     => 'collaborators_repeater',
 				'sidebar'  => false,
 				'settings' => [
 					'items' => [
-						papi_property( [
-							'title'    => 'Page',
-							'type'     => 'post',
-							'settings' => [
-								'text'      => '',
-								'post_type' => 'page',
-								'query'     => [
-									'meta_query' => [
-										[
-											'key' => '_papi_page_type',
-											'compare' => 'NOT EXISTS'
-										]
-									]
-								]
-							]
-						] )
+						[
+							'type'     => 'image',
+							'title'    => 'Logo',
+							'slug'     => 'collaborator_logo'
+						],
+						[
+							'type'  => 'string',
+							'title' => 'Titel',
+							'slug'  => 'collaborator_title',
+							'allow_html' => true
+						],
+						[
+							'type'  => 'url',
+							'title' => 'Link',
+							'slug'  => 'collaborator_url'
+						]
 					]
 				]
 			] )
+
 		] );
 
 	}
