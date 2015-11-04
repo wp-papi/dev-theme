@@ -23,10 +23,8 @@
 						</thead>
 						<tbody>
 							<tr>
-								<?php if ( function_exists( 'the_papi_page_type_name' ) ): ?>
-									<td>Page Type</td>
-									<td><?php echo empty( papi_get_page_type_name() ) ? 'No papi page type' : papi_get_page_type_name() ; ?></td>
-								<?php endif; ?>
+								<td>Page Type</td>
+								<td><?php echo empty( papi_get_page_type_name() ) ? 'No papi page type' : papi_get_page_type_name() ; ?></td>
 							</tr>
 							<tr>
 								<td>Template</td>
