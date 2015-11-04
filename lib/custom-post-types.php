@@ -3,8 +3,7 @@
 /**
  * Add custom post type `Module`.
  */
-
-function cpt_module () {
+function cpt_module() {
   $labels = [
 	'name'               => 'Module',
 	'singular_name'      => 'Module',
@@ -45,4 +44,4 @@ function cpt_module () {
   register_post_type( 'module', $args );
 }
 
-add_action('init', 'cpt_module');
+add_action( 'init', 'cpt_module' );

@@ -13,10 +13,9 @@ foreach ( glob( __DIR__ . '/lib/*.php' ) as $file ) {
  *
  * @return string
  */
-
 function current_url( $parse = false, $obj = true ) {
 	$url = $_SERVER['REQUEST_URI'];
-	$url = ltrim($url, '/');
+	$url = ltrim( $url, '/' );
 	$url = home_url() . '/' . $url;
 
 	if ( ! $parse ) {
