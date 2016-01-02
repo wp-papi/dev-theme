@@ -2,18 +2,33 @@
 
 class List_Page_Type extends Papi_Page_Type {
 
-	public function page_type() {
-		return array(
+	/**
+	 * Define our Page Type meta data.
+	 *
+	 * @return array
+	 */
+	public function meta() {
+		return [
 			'description' => 'Vel adipisicing dapibus nostra. Lectus malesuada volutpat aliquet',
 			'fill_labels' => true,
 			'name'        => 'List page',
 			'template'    => 'pages/list-page.php'
-		);
+		];
 	}
 
-	public function register() {
+	/**
+	 * Remove meta boxes.
+	 *
+	 * @return array
+	 */
+	public function remove() {
+		return ['editor'];
+	}
 
-		$this->remove( ['editor'] );
+	/**
+	 * Define our properties.
+	 */
+	public function register() {
 
 		$this->box( 'Content', [
 
