@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Add custom taxonomy test_taxonomy.
  */
