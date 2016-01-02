@@ -1,4 +1,5 @@
 <?php
+
 class Term_Page_Type extends Papi_Page_Type {
 
 	/**
@@ -26,7 +27,6 @@ class Term_Page_Type extends Papi_Page_Type {
 	 * Define our properties.
 	 */
 	public function register() {
-
 		$this->box( 'Content', [
 
 			// Term
@@ -98,6 +98,5 @@ class Term_Page_Type extends Papi_Page_Type {
 			] )
 
 		] );
-
 	}
 }
