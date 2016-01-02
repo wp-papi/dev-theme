@@ -59,6 +59,44 @@ class Term_Page_Type extends Papi_Page_Type {
 				]
 			] ),
 
+			papi_property( [
+				'type'     => 'repeater',
+				'title'    => 'Repeater test',
+				'slug'     => 'repeater_test',
+				'settings' => [
+					'items' => [
+						papi_property( [
+							'type'     => 'term',
+							'title'    => 'Term test 4',
+							'slug'     => 'term_test_4',
+							'settings' => [
+								'taxonomy' => ['test_taxonomy', 'test_taxonomy_2'],
+							]
+						] ),
+
+						papi_property( [
+							'type'     => 'term',
+							'title'    => 'Term test 5',
+							'slug'     => 'term_test_5',
+							'settings' => [
+								'taxonomy' => ['test_taxonomy', 'test_taxonomy_2'],
+								'layout'   => 'multiple'
+							]
+						] ),
+
+						papi_property( [
+							'type'     => 'term',
+							'title'    => 'Term test 6',
+							'slug'     => 'term_test_6',
+							'settings' => [
+								'taxonomy' => ['test_taxonomy', 'test_taxonomy_2'],
+								'select2'  => false,
+							]
+						] ),
+					]
+				]
+			] )
+
 		] );
 
 	}
