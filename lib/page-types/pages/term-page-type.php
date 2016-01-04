@@ -45,7 +45,7 @@ class Term_Page_Type extends Papi_Page_Type {
 				'slug'     => 'term_test_2',
 				'settings' => [
 					'taxonomy' => ['test_taxonomy', 'test_taxonomy_2'],
-					'layout'   => 'multiple'
+					'layout'   => 'advanced'
 				]
 			] ),
 
@@ -80,7 +80,7 @@ class Term_Page_Type extends Papi_Page_Type {
 							'slug'     => 'term_test_5',
 							'settings' => [
 								'taxonomy' => ['test_taxonomy', 'test_taxonomy_2'],
-								'layout'   => 'multiple'
+								'layout'   => 'advanced'
 							]
 						] ),
 
