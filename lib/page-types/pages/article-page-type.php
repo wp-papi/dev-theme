@@ -12,7 +12,8 @@ class Article_Page_Type extends Papi_Page_Type {
 			'description' => 'Vel adipisicing dapibus nostra. Lectus malesuada volutpat aliquet',
 			'fill_labels' => true,
 			'name'        => 'Article page',
-			'template'    => 'pages/article-page.php'
+			'template'    => 'pages/article-page.php',
+			'thumbnail'   => 'http://lorempixel.com/200/200/cats'
 		];
 	}
 
