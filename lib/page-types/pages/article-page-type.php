@@ -9,42 +9,10 @@ class Article_Page_Type extends Papi_Page_Type {
 	 */
 	public function meta() {
 		return [
-			'description' => 'Vel adipisicing dapibus nostra. Lectus malesuada volutpat aliquet',
+			'description' => 'This page type should not be seen since its overridden by page-types-override/pages/article-page-type.php',
 			'fill_labels' => true,
 			'name'        => 'Article page',
 			'template'    => 'pages/article-page.php'
 		];
-	}
-
-	/**
-	 * Remove meta boxes.
-	 *
-	 * @return array
-	 */
-	public function remove() {
-		return ['editor'];
-	}
-
-	/**
-	 * Define our properties.
-	 */
-	public function register() {
-		$this->box( 'Content', [
-
-			papi_property( [
-				'type'  => 'Image',
-				'title' => 'Hero image'
-			] ),
-
-			papi_property( [
-				'title'    => 'Feature',
-				'slug'     => 'feature_module',
-				'type'     => 'post',
-				'settings' => [
-					'text'      => 'Select module',
-					'post_type' => ['module', 'post']
-				]
-			] )
-		] );
 	}
 }
