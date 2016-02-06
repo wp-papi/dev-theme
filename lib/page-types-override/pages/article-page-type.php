@@ -30,7 +30,6 @@ class Article_Page_Type extends Papi_Page_Type {
 	 */
 	public function register() {
 		$this->box( 'Content', [
-
 			papi_property( [
 				'type'  => 'Image',
 				'title' => 'Hero image'
