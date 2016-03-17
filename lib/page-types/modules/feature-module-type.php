@@ -2,7 +2,7 @@
 
 class Feature_Module_Type extends Papi_Page_Type {
 
-	public function page_type() {
+	public function meta() {
 		return [
 		  'name'        => 'Feature',
 		  'description' => 'Feature module',
@@ -10,9 +10,11 @@ class Feature_Module_Type extends Papi_Page_Type {
 		];
 	}
 
-	public function register() {
-		$this->remove( ['editor', 'comments', 'thumbnail'] );
+	public function remove() {
+		return ['editor', 'comments', 'thumbnail'];
+	}
 
+	public function register() {
 		$this->box( 'Module content', [
 			papi_property( [
 				'type'  => 'string',
