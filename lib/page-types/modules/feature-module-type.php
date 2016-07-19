@@ -2,6 +2,11 @@
 
 class Feature_Module_Type extends Papi_Page_Type {
 
+	/**
+	 * Define our Page Type meta data.
+	 *
+	 * @return array
+	 */
 	public function meta() {
 		return [
 		  'name'        => 'Feature',
@@ -10,10 +15,18 @@ class Feature_Module_Type extends Papi_Page_Type {
 		];
 	}
 
+	/**
+	 * Remove meta boxes.
+	 *
+	 * @return array
+	 */
 	public function remove() {
 		return ['editor', 'comments', 'thumbnail'];
 	}
 
+	/**
+	 * Define our properties.
+	 */
 	public function register() {
 		$this->box( 'Module content', [
 			papi_property( [
@@ -34,5 +47,4 @@ class Feature_Module_Type extends Papi_Page_Type {
 			] )
 		] );
 	}
-
 }

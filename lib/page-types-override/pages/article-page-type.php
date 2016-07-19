@@ -16,7 +16,7 @@ class Article_Page_Type extends Papi_Page_Type {
 			'show_screen_options' => false
 		];
 	}
-	
+
 	/**
 	 * Get help sidebar information.
 	 *
@@ -35,7 +35,7 @@ class Article_Page_Type extends Papi_Page_Type {
 			</p>
 		';
 	}
-	
+
 	/**
 	 * Add help tabs.
 	 *

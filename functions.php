@@ -8,8 +8,8 @@ foreach ( glob( __DIR__ . '/lib/*.php' ) as $file ) {
 /**
  * Get current url.
  *
- * @param bool $parse
- * @param bool $obj
+ * @param  bool $parse
+ * @param  bool $obj
  *
  * @return string
  */
