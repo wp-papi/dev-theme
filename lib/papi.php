@@ -14,6 +14,7 @@ add_filter( 'papi/settings/directories', function () {
 
 	return [
 		WP_CONTENT_DIR . '/' . $dir . '/papi/tests/data/page-types',
+		WP_CONTENT_DIR . '/' . $dir . '/wp-papi/tests/data/page-types',
 		__DIR__ . '/page-types',
 		__DIR__ . '/page-types-override'
 	];
